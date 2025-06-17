@@ -1,0 +1,43 @@
+
+
+# App Configuration
+PORT=3000
+NODE_ENV=development
+
+# Bcrypt
+BCRYPT_SALT_ROUNDS=10
+
+# JWT (Optional fallback: JWT_SECRET and JWT_EXPIRED_IN)
+JWT_SECRET=yourLegacyJwtSecret
+JWT_EXPIRED_IN=5m
+
+# JWT Access & Refresh Tokens
+JWT_ACCESS_SECRET=yourAccessTokenSecret
+JWT_ACCESS_EXPIRES_IN=15m
+JWT_REFRESH_SECRET=yourRefreshTokenSecret
+JWT_REFRESH_EXPIRES_IN=7d
+
+# Stripe
+STRIPE_SECRET_KEY=yourStripeSecretKey
+STRIPE_WEBHOOK_SECRET=yourStripeWebhookSecret
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=yourCloudName
+CLOUDINARY_API_KEY=yourCloudinaryApiKey
+CLOUDINARY_API_SECRET=yourCloudinaryApiSecret
+
+# Email (SMTP)
+SMTP_AUTH_USER=yourEmailUser
+SMTP_AUTH_PASS=yourEmailPassword
+
+# Password Reset Link
+RESET_PASS_UI_LINK=https://yourfrontend.com/reset-password
+
+# Client URL
+ClIENT_URL=https://yourfrontend.com
+
+# Redis
+REDIS_CONNECTION_URL=redis://localhost:6379
+
+# Database
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/mydata?schema=public"
